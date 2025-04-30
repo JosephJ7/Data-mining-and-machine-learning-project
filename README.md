@@ -54,7 +54,7 @@ cd crimedetection-AYS
 
 ```bash
 # Create virtual environment using Python 3.12
-python -m venv .venv
+python3 -m venv .venv
 ```
 
 ### Activate the virtual environment
@@ -73,49 +73,7 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-## 🧰 Configuration
 
-
-Create a file `config.py` and ensure your file contains the correct PostgreSQL database configuration and MongoDB configuration :
-
-```python
-from pymongo import MongoClient
-from sqlalchemy import create_engine
-
-# MongoDB connection 
-MONGO_URI = <your-mongoDB-connection-string> 
-mongo_client = MongoClient(MONGO_URI)
-mongo_db = mongo_client[<your-database-name>]
-
-
-# PostgreSQL connection string
-PG_CONN_STRING = "postgresql://<your-db-user-name>:<your-db-password>@localhost:5432/<your-database-name>"
-pg_engine = create_engine(PG_CONN_STRING)
-```
-
-## 🧪 Running the App
-
-### 1. Start the Streamlit Dashboard
-```bash
-streamlit run .\dashboard\dashboard.py
-```
-
-### 2. Run the Dagster Pipeline (manually or via button in UI)
-#### To run the pipeline manually:
-```bash
-dagster job execute -f data_pipeline/project_master.py -j combined_pipeline_job
-```
-Alternatively, click the "🚀 Run Dagster Job" button from the sidebar in the dashboard to trigger it.
-
-#### To run the pipeline from Dagster UI:
-Start the processor on one terminal.
-```bash
-dagster-daemon run
-```
-On the other terminal , start the Dagster UI using this command:
-```bash
-dagster-webserver
-```
 
 ## 🧩 Technologies Used
 
