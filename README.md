@@ -9,7 +9,7 @@ This repository encompasses a collection of data mining and machine learning pro
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [📜 License](#license)
+- [License](#license)
 
 ## Projects
 
@@ -72,6 +72,7 @@ pip install -r requirements.txt
 ```
 
 ### Usage
+
 Each project is contained within its respective Jupyter Notebook. To explore and run the analyses:
 1. Launch Jupyter Notebook:
 ```bash
@@ -81,7 +82,7 @@ jupyter notebook
 
 3. Run the cells sequentially to execute the analysis.
 
-## 📜 License
+## License
 
 This project is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
