@@ -44,13 +44,6 @@ Ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/JosephJ7/Data-mining-and-machine-learning-project.git
-
-
-### Installation
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/<your-username>/Data-mining-and-machine-learning-project.git
 ```
@@ -65,13 +58,13 @@ python3 -m venv .venv
 ```
 4. Activate the virtual environment
 - On macOS/Linux:
-  ```bash
-  source .venv/bin/activate
-  ```
+```bash
+source .venv/bin/activate
+```
 - On Windows:
-  ```bash
-  .venv\Scripts\activate
-  ```
+```bash
+.venv\Scripts\activate
+```
 5. Install the required packages:
 ```bash
 pip install -r requirements.txt
