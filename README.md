@@ -9,7 +9,6 @@ This repository encompasses a collection of data mining and machine learning pro
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Projects
@@ -19,15 +18,15 @@ This repository encompasses a collection of data mining and machine learning pro
 This project involves analyzing bathing water quality data to identify patterns and potential factors affecting water cleanliness in Ireland.
 
 - **Objective**: Assess and visualize the quality of bathing waters across different regions in Ireland.
-- **Techniques Used**: Data cleaning, exploratory data analysis, visualization,clustering.
-- **Tools**: Python, Pandas, Matplotlib, Seaborn,Scikit-learn.
+- **Techniques Used**: Data cleaning, exploratory data analysis, visualization, clustering, Kmeans.
+- **Tools**: Python, Pandas, Matplotlib, Seaborn, Scikit-learn.
 
 ### 2. Job Posting Analysis
 
 This project focuses on analyzing job postings to extract insights about job trends, required skills, and market demand and to find if the postings are real or fake.
 
 - **Objective**: Understand job market dynamics by analyzing job postings data.
-- **Techniques Used**: Binary classfication , Text preprocessing,exploratory data analysis,Random Forest, GridSearchCV.
+- **Techniques Used**: Binary classfication, text preprocessing, exploratory data analysis, Random Forest, GridSearchCV.
 - **Tools**: Python, NLTK, Scikit-learn ,Pandas, Matplotlib, Seaborn.
 
 ## Getting Started
