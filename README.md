@@ -8,7 +8,6 @@ This repository encompasses a collection of data mining and machine learning pro
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [License](#license)
 
 ## Projects
