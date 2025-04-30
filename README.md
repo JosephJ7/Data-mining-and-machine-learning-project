@@ -1,98 +1,91 @@
+# Data Mining and Machine Learning Project
+
+This repository encompasses a collection of data mining and machine learning projects aimed at analyzing diverse datasets to extract meaningful insights and build predictive models.
+
+## Table of Contents
+
+- [Projects](#projects)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Projects
+
+### 1. Bathing Water Quality Analysis
+
+This project involves analyzing bathing water quality data to identify patterns and potential factors affecting water cleanliness in Ireland.
+
+- **Objective**: Assess and visualize the quality of bathing waters across different regions in Ireland.
+- **Techniques Used**: Data cleaning, exploratory data analysis, visualization,clustering.
+- **Tools**: Python, Pandas, Matplotlib, Seaborn,Scikit-learn.
+
+### 2. Job Posting Analysis
+
+This project focuses on analyzing job postings to extract insights about job trends, required skills, and market demand and to find if the postings are real or fake.
+
+- **Objective**: Understand job market dynamics by analyzing job postings data.
+- **Techniques Used**: Binary classfication , Text preprocessing,exploratory data analysis,Random Forest, GridSearchCV.
+- **Tools**: Python, NLTK, Scikit-learn ,Pandas, Matplotlib, Seaborn.
+
+## Getting Started
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.7 or higher
+- pip package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JosephJ7/Data-mining-and-machine-learning-project.git
 
 
-# 📊 Ireland Crime Detection Dashboard
+### Installation
 
-An interactive data dashboard built with Streamlit for exploring and analyzing crime statistics in Ireland. It offers interactive visualizations based on offence types and the age distribution of suspected offenders. The data pipeline is powered by Dagster, automating the ETL (Extract, Transform, Load) workflow for consistent and up-to-date data delivery.
-
-The system ingests data from official APIs using the JSON-STAT standard and processes it through a Dagster-powered ETL pipeline. MongoDB is used for intermediate storage and transformation, while PostgreSQL serves as the queryable backend for the dashboard. Final visualizations are rendered through Plotly and served interactively using Streamlit.
-
-## 📁 Project Structure
-
+1. Clone the repository:
 ```bash
-crimedetection-AYS/
-├── dashboard/              # Streamlit dashboard app
-│   └── dashboard.py        # Main Streamlit app
-├── data_pipeline/          # Dagster data pipeline code
-│   ├── project_master.py   # Combined Dagster pipeline job
-│   ├── dagster_pipe.py     # Individual Dagster pipeline job
-│   ├── repository.py       # Repository Definition 
-│   └── visualizations.py   # All chart functions used in the dashboard
-├── config.py               # Database config (e.g., PostgreSQL engine,MongoDB)
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── .venv/                  # Virtual environment (to be created by user)
-└── workspace.yaml          # Connects Dagster to pipeline code.
+git clone https://github.com/<your-username>/Data-mining-and-machine-learning-project.git
 ```
-
-## 🚀 Features
-
-- 📈 Interactive visualizations using Plotly and Streamlit
-- 🧠 Dagster integration for data pipeline execution
-- 🗃️ Filter by offence type, age group, Garda division, and more
-- 📊 Line charts, bar charts, heatmaps, area charts, and animations
-- ⚙️ Clean sidebar controls for dataset selection and job status
-
-## 📂 Data Source
-
-This project uses the following datasets provided by Ireland's Central Statistics Office via data.gov.ie:
-
-- [Dataset 1: Recorded Crime Incidents (CJQ06)](https://data.gov.ie/dataset/cjq06-recorded-crime-incidents) – Contains statistics on recorded crime incidents by Garda division and offence type.
-- [Dataset 2: Detected Recorded Crime by Age of Suspected Offenders (RCD09)](https://data.gov.ie/dataset/rcd09-detected-recorded-crime-by-age-of-suspected-offenders) – Provides breakdowns of detected crimes by the age group of suspected offenders.
-
-These datasets are periodically retrieved and processed via a Dagster pipeline to support the visualizations shown in the dashboard.
-
-
-## 🛠️ Installation
-
-### Clone the repository
+2. Navigate to the project directory:
 ```bash
-git clone https://github.com/<your-username>/crimedetection-AYS.git
-cd crimedetection-AYS
+cd Data-mining-and-machine-learning-project
 ```
-
-### Create a virtual environment (Python 3.12)
-
+3. Create a virtual environment (Python 3.12)
 ```bash
 # Create virtual environment using Python 3.12
 python3 -m venv .venv
 ```
-
-### Activate the virtual environment
-
-#### On macOS/Linux:
-```bash
-source .venv/bin/activate
-```
-
-#### On Windows:
-```bash
-.venv\Scripts\activate
-```
-
-### Install dependencies
+4. Activate the virtual environment
+- On macOS/Linux:
+  ```bash
+  source .venv/bin/activate
+  ```
+- On Windows:
+  ```bash
+  .venv\Scripts\activate
+  ```
+5. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
+### Usage
+Each project is contained within its respective Jupyter Notebook. To explore and run the analyses:
+1. Launch Jupyter Notebook:
+```bash
+jupyter notebook
+```
+2. Open the desired notebook (e.g., bathing_water_quality.ipynb or job_posting_analysis.ipynb).
 
-## 🧩 Technologies Used
-
-- **Python**
-- **Streamlit**
-- **Plotly**
-- **Dagster**
-- **PostgreSQL**
-- **MongoDB**
-- **pandas**
-
-
-## 📸 Screenshots
-
-<p align="center">
-  <img src="static/img/dashboard.png" alt="Dashboard Preview" width="800"/>
-</p>
-
-
+3. Run the cells sequentially to execute the analysis.
 
 ## 📜 License
 
